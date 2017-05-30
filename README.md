@@ -19,30 +19,18 @@ Please feel free to use the developer reviewing your work as a resource. If any 
 Imagine SALIDO has expanded its reach into the wine industry with the new "SALIDO Wine Club". We need to source product data from the wine.com API (http://api.wine.com) and load it into our own database of wine products.
 
 ## Requirements
-1. Upon app start, the user should be prompted to sign in using a pin or to create a new employee
-	- A user should have (at minimum) the following attributes:
-		1. a pin code (numeric values only, required)
-		2. a first name (required)
-		3. a last name (required)
-		4. a valid email address (optional)
-	- An error prompt must appear if an invalid pin is entered (not the right format or isn't assigned to anyone)
-	- All employees must be unique (first name duplicates are allowed, but pin, last name, and email addresses must be unique)
-2. The user should be able to search for their pin from the log in screen if they've forgotten it.
-	- The user should be asked to enter the email for the employee they wish to find a pin for.
-	- If the email is not found in the database, inform the user.
-	- If the email is found, display the user's pin.
+1. Upon opening the app, the user should be presented with a list of wines sourced from the wine.com API
 	- The user should be able to:
 		- Sort by name
 		- Filter by category (once filtered, user should be able to sort the list by name)
 	- The items in the list presented should display an image of the item and the item name (if no image is given, display nothing).
 	- If the API is unreachable (no internet) an error notification should be displayed on every screen. Attempts to reach the API present an error message.
 	- The user should be able to quickly add an item to their cart from this screen, without entering the item's detail screen.
-3. Upon logging in, the user should be presented with a list of wines sourced from the wine.com API
-4. Upon selecting an item from the list, the user should be taken to an item detail screen.
+2. Upon selecting an item from the list, the user should be taken to an item detail screen.
 	- The item detail screen should display an image of the item (if it exists) and the item's name
 	- The item detail screen should display the item's description as returned from the API. Otherwise, placeholder information must be provided.
 	- The item detail screen should allow the user to add the item to their shopping cart and set the quantity.
-5. Upon moving to the shopping cart screen, the user should be shown a list of items that were selected.
+3. Upon moving to the shopping cart screen, the user should be shown a list of items that were selected.
 	- Items in the list should display the item image, item name, and quantity bought
 	- Items should be displayed in the order they were added to the cart.
 	- The total of all item quantities should be present somewhere on the screen.
@@ -57,11 +45,7 @@ Imagine SALIDO has expanded its reach into the wine industry with the new "SALID
 		- The expected outcome is:
 			- Item A, Qty 5
 			- Item B, Qty 2
-6. Upon checking out, the user should be presented with a confirmation or "Thank You" screen as well as the option to start a new order.
-7. The user should be able to log out at any point in time.
-8. The user should be able to access their shopping cart at any time.
-9. The user should be allowed to view a list of all employees.
-	- Display the employee's hiring date and the amount of items in their cart, if any.
+4. The user should be able to access their shopping cart at any time.
 
 ## Other Notes
 - Your application must be written in Objective-C
@@ -70,7 +54,7 @@ Imagine SALIDO has expanded its reach into the wine industry with the new "SALID
 	- Handle payment. Assume all items are free.
 	- Have fancy UI. You can make the interface as barebones as you'd like.
 	- Account for screen rotation.
-	- Account for iPhone displays. Focus on iPads.
+	- Account for iPhone displays. Focus on iPads in fixed landscape orientation.
 - You can:
 	- Use (free) 3rd party frameworks and libraries, if needed.
 
