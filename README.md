@@ -16,26 +16,27 @@ Imagine SALIDO has expanded its reach into the wine industry with the new "SALID
 1. Upon opening the app, the user should be presented with a list of wines sourced from the wine.com API
 	- The user should be able to:
 		- Sort by name
-		- Filter by category (once filtered, user should be able to sort the list by name)
-	- The items in the list presented should display an image of the item and the item name (if no image is given, display nothing).
-	- If the API is unreachable (no internet) an error notification should be displayed on every screen. Attempts to reach the API present an error message.
-	- The user should be able to quickly add an item to their cart from this screen, without entering the item's detail screen.
-2. Upon selecting an item from the list, the user should be taken to an item detail screen.
+		- Filter by category
+		- (Or do both while maintaining state)
+	- The items in the list presented should display an image of the item and the item name (if no image is given, display nothing)
+	- If the API is unreachable (no internet) an error notification should be displayed on every screen
+	- The user should be able to quickly add an item to their cart from this screen, without entering the item's detail screen
+2. Upon selecting an item from the list, the user should be taken to an item detail screen
 	- The item detail screen should display an image of the item (if it exists) and the item's name
-	- The item detail screen should display the item's description as returned from the API. Otherwise, placeholder information must be provided.
-	- The item detail screen should allow the user to add the item to their shopping cart and set the quantity.
-3. Upon moving to the shopping cart screen, the user should be shown a list of items that were selected.
-	- Items in the list should display the item image, item name, and quantity bought
-	- Items should be displayed in the order they were added to the cart.
-	- The total of all item quantities should be present somewhere on the screen.
-	- The screen should allow the user to return to the main catalogue of items.
-	- The user should be allowed to remove items from the cart.
-	- The item detail screen should also be accessible from the shopping cart screen by selecting an item.
-	- No item in the cart can have a quantity of 0.
+	- The item detail screen should display the item's description as returned from the API
+	- The item detail screen should allow the user to add variable quantity of the item to their shopping cart
+3. Upon moving to the shopping cart screen, the user should be shown a list of items that were previously added
+	- Items in the list should display the item image, item name, and quantity added
+	- Items should be displayed in the order they were added to the cart
+	- The total of all item quantities should be present somewhere on the screen
+	- The screen should allow the user to return to the main catalogue of items
+	- The user should be allowed to remove items from the cart
+	- The item detail screen should also be accessible from the shopping cart screen by selecting an item
+	- No item in the cart can have a quantity of 0
 	- If multiple instances of the same item are added, but at different points, the item should appear in the position that the first instance was added, but the quantity should be grouped. For example:
-		- Item A was added with quantity 1.
-		- Item B was added with quantity 2.
-		- Another instance of item A was added, but with a quantity of 4.
+		- Item A was added with quantity 1
+		- Item B was added with quantity 2
+		- Another instance of item A was added, but with a quantity of 4
 		- The expected outcome is:
 			- Item A, Qty 5
 			- Item B, Qty 2
