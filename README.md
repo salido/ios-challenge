@@ -10,7 +10,7 @@ Please feel free to use the developer reviewing your work as a resource. If any 
 1. Send a link to your solution to challenge-accepted@salido.com.
 
 ## Context
-Imagine SALIDO has expanded its reach into the wine industry with the new "SALIDO Wine Club". We need to source product data from the wine.com API (http://api.wine.com) and load it into our own database of wine products.
+Imagine SALIDO has expanded its reach into the wine industry with the new "SALIDO Wine Club" app. We need to source product data from the wine.com API (http://api.wine.com) and display it in a concise and user-friendly manner.
 
 ## Requirements
 1. Upon opening the app, the user should be presented with a list of wines sourced from the wine.com API
