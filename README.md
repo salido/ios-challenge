@@ -5,12 +5,12 @@ Please feel free to use the developer reviewing your work as a resource. If any 
 
 ## Submission Instructions
 
-1. Complete the challenge according to the Challenge Instructions below.
-1. Post your solution in a Github repo. Be sure to include a README.
-1. Send a link to your solution to challenge-accepted@salido.com.
+1. Complete the challenge according to the instructions below
+1. Post your solution to a Github repo. Be sure to include a README file
+1. Email a link to your solution repo to: challenge-accepted@salido.com
 
 ## Context
-Imagine SALIDO has expanded its reach into the wine industry with the new "SALIDO Wine Club" app. We need to source product data from the wine.com API (http://api.wine.com) and display it in a concise and user-friendly manner.
+Imagine SALIDO is expanding its reach into the wine industry with a new "SALIDO Wine Club" app.  The app will allow users to browse available wines.  We must source product data from the public wine.com API (http://api.wine.com) and display that data in a concise and user-friendly manner.
 
 ## Requirements
 1. Upon opening the app, the user should be presented with a list of wines sourced from the wine.com API
@@ -18,13 +18,13 @@ Imagine SALIDO has expanded its reach into the wine industry with the new "SALID
 		- Sort by name
 		- Filter by category
 		- (Or do both while maintaining state)
-	- The items in the list presented should display an image of the item and the item name (if no image is given, display nothing)
+	- Each listed item should display an image of the item and the item name (if no image exists, display nothing)
 	- If the API is unreachable (no internet) an error notification should be displayed on every screen
-	- The user should be able to quickly add an item to their cart from this screen, without entering the item's detail screen
+	- The user should be able to quickly add an item to their shopping cart from this screen, without entering the item's detail screen
 2. Upon selecting an item from the list, the user should be taken to an item detail screen
 	- The item detail screen should display an image of the item (if it exists) and the item's name
 	- The item detail screen should display the item's description as returned from the API
-	- The item detail screen should allow the user to add variable quantity of the item to their shopping cart
+	- The item detail screen should allow the user to add a variable quantity of the item to their shopping cart
 3. Upon moving to the shopping cart screen, the user should be shown a list of items that were previously added
 	- Items in the list should display the item image, item name, and quantity added
 	- Items should be displayed in the order they were added to the cart
@@ -43,23 +43,23 @@ Imagine SALIDO has expanded its reach into the wine industry with the new "SALID
 4. The user should be able to access their shopping cart at any time.
 
 ## Expectations
-1. You can model data supplied by the API in a way that is simple and makes sense.
-2. You can take modeled information and create an easily digestible UI around it.
-3. You can utilize appropriate frameworks to make your code fast, simple, and DRY.
-4. You can take a set of business requirements from end-to-end, keeping in mind how the user will interact with the final product.
+1. You can model data supplied by the API in a way that is simple and makes sense
+2. You can take modeled information and create an easily digestible UI around it
+3. You can utilize appropriate frameworks to make your code fast, simple, and DRY
+4. You can take a set of business requirements from end-to-end, keeping in mind how the user will interact with the final product
 
 ## Other Notes
 - Your application must be written in Objective-C
-- You do not need to:
-	- Save an order or session if the app enters the background. If the user presses the home button, you can just log them out and present the login screen when the app is launched again.
-	- Handle payment. Assume all items are free.
-	- Have fancy UI. You can make the interface as barebones as you'd like.
-	- Account for screen rotation.
-	- Account for iPhone displays. Focus on iPads in fixed landscape orientation.
+- You DO NOT need to:
+	- Save the user's session if the app enters the background. If the user presses the home button, his/her shopping cart data will be lost
+	- Handle a checkout or payment - asume all items are free
+	- Have a fancy UI - you can make the interface as barebones as you'd like
+	- Account for screen rotation
+	- Account for iPhone displays - focus on iPads in a fixed landscape orientation
 - You can:
-	- Use (free) 3rd party frameworks and libraries, if needed.
+	- Use any (free) 3rd party frameworks and libraries as you see fit
 
-- While it isn't required, it is recommended that you write simple tests for your validations.
+- While not an explicit requirement, we encourage you to write simple tests for your validations
 
 - Evaluation:
 	We are judging your work based on the following criteria:
