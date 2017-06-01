@@ -1,13 +1,13 @@
 # SALIDO iOS Challenge
 This challenge is intended to get a better idea of a SALIDO candidate's coding style and development process. There is no hard time limit, but we ask that you send in your solution promptly.
 
-Please feel free to use the developer reviewing your work as a resource. If any points seem vague or need clarifying, they will be there to help.
+Please feel free to use the developer(s) reviewing your work as a resource. If any requirements appear vague or need additional clarification, they will be happy to help.
 
 ## Submission Instructions
 
 1. Complete the challenge according to the instructions below
 1. Post your solution to a Github repo. Be sure to include a README file
-1. Email a link to your solution repo to: challenge-accepted@salido.com
+1. Email a link to your solution to: challenge-accepted@salido.com
 
 ## Context
 Imagine SALIDO is expanding its reach into the wine industry with a new "SALIDO Wine Club" app.  The app will allow users to browse available wines.  We must source product data from the public wine.com API (http://api.wine.com) and display that data in a concise and user-friendly manner.
