@@ -40,7 +40,7 @@ Imagine SALIDO is expanding its reach into the wine industry with a new "SALIDO 
 		- The expected outcome is:
 			- Item A, Qty 5
 			- Item B, Qty 2
-4. The user should be able to access their shopping cart at any time.
+4. The user should be able to access their shopping cart at any time
 
 ## Expectations
 1. You can model data supplied by the API in a way that is simple and makes sense
@@ -52,12 +52,12 @@ Imagine SALIDO is expanding its reach into the wine industry with a new "SALIDO 
 - Your application must be written in Objective-C
 - You DO NOT need to:
 	- Save the user's session if the app enters the background. If the user presses the home button, his/her shopping cart data will be lost
-	- Handle a checkout or payment - asume all items are free
-	- Have a fancy UI - you can make the interface as barebones as you'd like
+	- Handle a checkout or payment - assume all items are free
+	- Have a fancy UI - you can make the interface as barebones as you like
 	- Account for screen rotation
 	- Account for iPhone displays - focus on iPads in a fixed landscape orientation
 - You can:
-	- Use any (free) 3rd party frameworks and libraries as you see fit
+	- Use any (free) 3rd party frameworks or libraries as you see fit
 
 - While not an explicit requirement, we encourage you to write simple tests for your validations
 
